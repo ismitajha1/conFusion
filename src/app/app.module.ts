@@ -25,6 +25,10 @@ import { PromotionService } from './services/promotion.service';
 import { LeaderService } from './services/leader.service';
 import { LoginComponent } from './login/login.component';
 
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { MatCheckboxModule } from '@angular/material/checkbox';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -48,6 +52,10 @@ import { LoginComponent } from './login/login.component';
     MatCardModule,
     MatButtonModule,
     MatDialogModule,
+    MatFormFieldModule, 
+    MatInputModule,
+    MatCheckboxModule,
+    FormsModule,
     FlexLayoutModule
   ],
   providers: [DishService,PromotionService,LeaderService],
